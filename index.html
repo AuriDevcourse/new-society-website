@@ -11,7 +11,21 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
-        h1 {
+        nav {
+            background-color: #333;
+            padding: 1em;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        h1, h2 {
             color: #333;
             text-align: center;
         }
@@ -19,10 +33,41 @@
             line-height: 1.6;
             color: #666;
         }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <h1>Welcome to Our New Society</h1>
-    <p>This is a test page for our new project.</p>
+    <p>This is a test page for our new project, where we bring people together to create positive change.</p>
+
+    <div id="mission" class="section">
+        <h2>Our Mission</h2>
+        <p>We believe in building a collaborative community that empowers individuals and drives positive change through innovation and cooperation.</p>
+    </div>
+
+    <div id="team" class="section">
+        <h2>Our Team</h2>
+        <p>We are a dedicated group of professionals committed to making a difference in our community.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@newsociety.test<br>
+Phone: (555) 123-4567<br>
+Address: 123 Society Street, Innovation City</p>
+    </div>
 </body>
 </html>
